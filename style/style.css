@@ -1,0 +1,585 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'mr';
+}
+
+body{
+    background: #F1F1F1;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1320px;
+    width: 100%;
+}
+
+.nav__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 21px;
+    border-bottom: 3px solid #323232;
+    column-gap: 100px;
+    flex-wrap: wrap;
+}
+
+.header__nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    flex-wrap: wrap;
+}
+
+.header__nav-link{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    color: #323232;
+    transition: all 440ms;
+}
+
+.header__nav-link:hover{
+    color: rgb(255, 5, 242);
+    transform: scale(2);
+}
+
+.header__nav-logoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.logo{
+    font-family: 'mb';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 23px;
+    color: black;
+    transition: 300ms;
+
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+.header__content-items{
+    display: grid;
+    grid-template-columns: repeat(2,526px);
+    grid-auto-rows: minmax(294px,auto);
+    gap: 30px;
+}
+
+.header__content-item{
+    background: #8484844D;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    position: relative;
+}
+
+.item2{
+    grid-column: span 1;
+    grid-row: span 2;
+    width: 746px;
+}
+
+.header__content-title{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: black;
+    margin-bottom: 20.45px;
+
+}
+.header__content-brand{
+    font-family: 'mb';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    color: black;
+    margin-bottom: 20.45px;
+    text-transform: uppercase;
+}
+
+.header__content-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content-price{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.79px;
+    color: black;
+}
+
+.mini__info{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.82px;
+    position: absolute;
+    top: 16px;
+    left: 22px;
+    background: #323232;
+    padding: 9px 27px;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.57px;
+    letter-spacing: 2.200000047683716px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.watches_items{
+    border-top: 3px solid #323232;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(416px,auto));
+    grid-auto-rows: 485px;
+    gap: 15px;
+    
+} 
+
+.watches__item{
+    background-color: #8484844D;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.watches__item-title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    color: #323232;
+    margin-bottom: 20px;
+}
+
+.watches__item-brand{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    color: #000000;
+    margin-bottom: 20px;
+    font-family: 'mb';
+}
+
+.watches__item-price{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    color: #323232;
+}
+
+.watches__item-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini__infos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.watches__title2{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.57px;
+    color: #323232;
+    text-align: center;
+    margin-top: 60px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.box{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.news__items{
+    border-top: 3px solid #323232;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.news__item{
+    background: url(../image/news1.jpg);
+    height: 470px;
+    width: 636px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.news__item-title{
+    font-family: 'mb';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.82px;
+    color: #F1F1F1;
+    margin-bottom: 30px;
+    width: 466px;
+    padding-top: 110px;
+}
+
+.news__item-text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #E1E1E1;
+    width: 462px;
+}
+
+.sovets{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    color: #323232;
+    background-color: white;
+    padding: 13px 30px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.info__text{
+    font-family: 'mr';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: #FFFFFF;
+}
+.news__item-info{
+    position: absolute;
+    bottom: 60px;
+    left: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.second{
+    background: url(../image/news2.png) no-repeat center /cover;
+}
+
+.footer__item-title{
+    font-family: 'mb';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.title2{
+    font-family: 'mr';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.82px;
+    letter-spacing: 2.200000047683716px;
+    color: #FFFFFF;
+
+}
+
+.footer__item-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.footer__item-link{
+    font-family: 'mr';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    color: #FFFFFF;
+
+}
+
+.footer{
+    background: #323232;
+    padding-top: 100px ;
+    padding-bottom: 100px;
+}
+
+.footer__items{
+    display: flex;
+    gap: 160px;
+    flex-wrap: wrap;
+}
+
+.item3{
+    max-width: 526px;
+    width: 100%;
+}
+
+.footer__item-text{
+    font-family: 'mr';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    width: 526px;
+    color: #FFFFFF;
+
+}
+
+.calls{
+    display: flex;
+    gap: 10.31px;
+}
+
+.telephone{
+    font-family: 'mr';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    color: #FFFFFF;
+}
+
+.email{
+    font-family: 'mr';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: left;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.socials{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    letter-spacing: 2.5px;
+    color: #FFFFFF;
+    margin-top: 60px;
+
+}
+
+.web{
+    display: flex;
+    gap: 26px;
+    margin-top: 40px;
+}
+
+@media (max-width:1350px) {
+    .item2{
+        grid-column: span 1;
+        grid-row: span 1;
+        width: 100%;
+    }
+    .header__content-items{
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .watches_items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .news__items{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width:1300px) {
+    .header__nav-logoes{
+        display: none;
+    }
+}
+
+@media (max-width:1160px) {
+    .footer__items{
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+@media (max-width:920px) {
+    .nav__box{
+        row-gap: 40px;
+        
+    }
+}
+@media (max-width:675px) {
+    .header__nav-list{
+        row-gap: 20px;
+        
+    }
+    .news__item{
+        height: 387px;
+        width: 527px;
+    }
+    .title{
+        font-size: 19px;
+        padding-bottom: 14px;
+    }
+    .watches__title2 {
+        font-size: 23px
+    }
+    .box{
+        margin-top: 25px;
+    }
+    .news__item-title {
+        font-size: 17px;
+    }
+    .news__item-text{
+        font-size: 13px;
+    }
+    .info__text {
+        font-size: 12px;
+        left: 35px;
+    }
+    .sovets {
+        font-size: 15px;
+        padding: 7px 19px;
+    }
+}
+
+@media (max-width:675px) {
+        .header__content-item img{
+            width: 200px;
+        }
+        .watches__item-img{
+        width: 150px;
+        height: 180px;
+        }
+        .watches__item-title{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .watches__item-brand{
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .watches__item-price {
+            font-size: 16px;
+        }
+        .mini__info{
+            font-size: 13px;
+            padding: 4px 18px;
+        }
+}
+
+@media (max-width:550px){
+    .news__item {
+        height: 329px;
+        width: 433px;
+    }
+    .news__item-title {
+        font-size: 13px;
+        width: 100%;
+    }
+    .news__item-text {
+        font-size: 11px;
+        width: 100%;
+    }
+    .news__item-info{
+        left: 7px;
+    }
+    .item3{
+        width: 200px;
+    }
+    .footer__item-text{
+        width: 220px;
+        font-size: 13px;
+    }
+    .telephone {
+        font-size: 10px;
+    }
+    .email{
+        font-size: 12px;
+    }
+    .socials{
+        font-size: 12px;
+        margin-top: 30px;
+    }
+    .title2{
+        font-size: 12px;
+    }
+    .footer__item-link{
+        font-size: 13px;
+    }
+    .footer__item-list{
+        row-gap: 5px;
+    }
+    .footer__item-title{
+        margin-bottom: 15px;
+    }
+    .footer__item-title{
+        font-size: 24px;
+    }
+}
+@media (max-width:500px){
+    .watches_items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:500px){
+    .news{
+        display: none;
+    }
+    .header__content-item img{
+        width: 150px;
+    }
+    .header__content-brand{
+        font-size: 18px;
+    }
+    .header__content-title{
+        font-size: 14px;
+    }
+    .header__content-price{
+        font-size: 15px;
+    }
+    .mini__infos img{
+        width: 43px;
+    }
+
+}
